@@ -41,6 +41,13 @@ popd
 sudo ldconfig
 
 # Start building
+
+git clone https://github.com/shadowsocks/shadowsocks-libev.git
+
+cd shadowsocks-libev
+
+git submodule update --init --recursive
+
 ./autogen.sh && ./configure && make
 
 sudo make install
