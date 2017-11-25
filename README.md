@@ -65,6 +65,8 @@ sudo chkconfig shadowsocks on
 
 如果配合kcptun使用，可以将kcptun.init.txt做上面同样的操作
 
+https://github.com/xtaci/kcptun/releases
+
 防火墙相关
 
 
