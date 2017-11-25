@@ -49,8 +49,11 @@ sudo make install
 
 让shadowsocks开机启动
 将shadowsocks.init.txt脚本改名为shadowsocks放到/etc/init.d/目录
+
 sudo chmod a+x /etc/init.d/shadowsocks
+
 sudo chkconfig --add shadowsocks
+
 sudo chkconfig shadowsocks on
 
 如果配合kcptun使用，可以将kcptun.init.txt做上面同样的操作
