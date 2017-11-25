@@ -4,7 +4,7 @@ shadowsocks_config for centos7
 安装必备的开发环境
 ## CentOS / Fedora / RHEL
 yum install epel-release -y
-yum install gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto udns-devel c-ares-devel libev-devel wget git curl -y
+yum install gcc gettext autoconf libtool automake make pcre-devel asciidoc xmlto c-ares-devel libev-devel wget git curl -y
 
 # Installation of Libsodium
 export LIBSODIUM_VER=1.0.15
