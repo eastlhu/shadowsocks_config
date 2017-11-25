@@ -64,4 +64,3 @@ sudo chkconfig --add shadowsocks
 sudo chkconfig shadowsocks on
 
 如果配合kcptun使用，可以将kcptun.init.txt做上面同样的操作
-
