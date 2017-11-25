@@ -1,31 +1,6 @@
 # shadowsocks_config
 shadowsocks_config for centos7
 
-开放防火墙端口
-
-永久的开放需要的端口
-
-sudo firewall-cmd --zone=public --add-port=3000/tcp --permanent
-sudo firewall-cmd --zone=public --add-port=3000/udp --permanent
-sudo firewall-cmd --reload
-之后检查新的防火墙规则
-
-firewall-cmd --list-all
-关闭防火墙
-
-//临时关闭防火墙,重启后会重新自动打开 
-systemctl restart firewalld 
-//检查防火墙状态 
-firewall-cmd --state firewall-cmd --list-all 
-//Disable firewall 
-systemctl disable firewalld 
-systemctl stop firewalld 
-systemctl status firewalld 
-//Enable firewall 
-systemctl enable firewalld 
-systemctl start firewalld 
-systemctl status firewalld
--------------------------------------------------------------------------------------------------
 安装必备的开发环境
 ## CentOS / Fedora / RHEL
 yum install epel-release -y
@@ -55,7 +30,8 @@ sudo ldconfig
 ./autogen.sh && ./configure && make
 sudo make install
 
--------------------------------------------------------------------------------------------------
+
+
 让shadowsocks开机启动
 将shadowsocks.init.txt脚本改名为shadowsocks放到/etc/init.d/目录
 sudo chmod a+x /etc/init.d/shadowsocks
