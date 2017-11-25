@@ -13,18 +13,17 @@ sudo firewall-cmd --reload
 firewall-cmd --list-all
 关闭防火墙
 
-//临时关闭防火墙,重启后会重新自动打开
-systemctl restart firewalld
-//检查防火墙状态
-firewall-cmd --state
-firewall-cmd --list-all
-//Disable firewall
-systemctl disable firewalld
-systemctl stop firewalld
-systemctl status firewalld
-//Enable firewall
-systemctl enable firewalld
-systemctl start firewalld
+//临时关闭防火墙,重启后会重新自动打开 
+systemctl restart firewalld 
+//检查防火墙状态 
+firewall-cmd --state firewall-cmd --list-all 
+//Disable firewall 
+systemctl disable firewalld 
+systemctl stop firewalld 
+systemctl status firewalld 
+//Enable firewall 
+systemctl enable firewalld 
+systemctl start firewalld 
 systemctl status firewalld
 -------------------------------------------------------------------------------------------------
 安装必备的开发环境
